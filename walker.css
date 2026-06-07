@@ -13,12 +13,116 @@
 /*       ▀     ▀     █   ▀      █          ▀               */
 /*                  ▀          ▀                           */
 
-@define-color selected-text #6296a0;
+@define-color selected-text #d8c8a9;
 @define-color text #d8c8a9;
 @define-color base #232227;
 @define-color border #736a60;
+@define-color frame #d2bd7d;
+@define-color panel #18171b;
+@define-color panel-edge #0d0c10;
+@define-color hover #2f2d31;
+@define-color selected-bg #454045;
+@define-color accent-line #6296a0;
+@define-color muted #968975;
+@define-color warning #d2bd7d;
+@define-color error #b17f6d;
+@define-color success #898b77;
 @define-color foreground #d8c8a9;
 @define-color background #232227;
+
+window,
+#window {
+    background-color: transparent;
+    color: @text;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+}
+
+window .box-wrapper,
+#box {
+    background-color: alpha(@panel, 0.96);
+    border: 1px solid alpha(@border, 0.78);
+    border-radius: 0;
+    padding: 16px 20px;
+    box-shadow:
+        inset 0 1px rgba(240, 223, 189, 0.025),
+        0 20px 44px rgba(0, 0, 0, 0.55);
+}
+
+.search-container,
+window .search-container,
+window .search,
+.search {
+    background-color: @panel-edge;
+    border: 1px solid alpha(@border, 0.64);
+    border-radius: 0;
+    padding: 10px 13px;
+    margin: 0 0 12px 0;
+    box-shadow: inset 3px 0 @accent-line;
+}
+
+entry,
+#entry entry,
+.input,
+entry.Input {
+    background-color: transparent;
+    color: @foreground;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    outline: none;
+}
+
+list,
+.list,
+scrolledwindow {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+child {
+    padding: 0;
+    margin: 0 0 3px 0;
+    background: transparent;
+    border: none;
+}
+
+child .item-box {
+    padding: 8px 13px;
+    border-left: 2px solid transparent;
+    border-top: 1px solid alpha(@border, 0.18);
+    background-color: transparent;
+    color: @foreground;
+    transition:
+        background-color 120ms ease,
+        border-color 120ms ease;
+}
+
+child:hover .item-box {
+    background-color: @hover;
+    border-left-color: alpha(@accent-line, 0.58);
+}
+
+child:selected .item-box {
+    background-color: @selected-bg;
+    border-left-color: @accent-line;
+    box-shadow:
+        inset 0 1px rgba(240, 223, 189, 0.03),
+        inset 0 -1px alpha(@frame, 0.54);
+}
+
+child:selected .item-box * {
+    color: @selected-text;
+}
+
+label.description,
+label.dim-label,
+.description {
+    color: @muted;
+}
 
 /*  ______   __       ______                                        */
 /* /_____/\ /_/\     /_____/\                                       */

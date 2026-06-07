@@ -19,7 +19,7 @@
 background       = "#232227"
 background-alpha = 0.92
 text             = "#d8c8a9"
-active           = "#b17f6d"
+active           = "#d2bd7d"
 scale-with-font  = true
 size-horizontal  = 26
 size-vertical    = 28

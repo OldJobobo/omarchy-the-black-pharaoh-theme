@@ -15,6 +15,71 @@
 
 @define-color background #232227;
 @define-color foreground #d8c8a9;
+@define-color surface #18171b;
+@define-color muted #736a60;
+@define-color dim #968975;
+@define-color accent #6296a0;
+@define-color active #d2bd7d;
+@define-color error #b17f6d;
+@define-color warning #d2bd7d;
+@define-color success #898b77;
+
+window#waybar {
+    background-color: alpha(@background, 0.92);
+    color: @foreground;
+    border-bottom: 1px solid alpha(@muted, 0.42);
+}
+
+#workspaces button {
+    color: @dim;
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button:hover {
+    background-color: alpha(@surface, 0.72);
+    color: @foreground;
+    border-bottom-color: alpha(@accent, 0.48);
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+    color: @foreground;
+    border-bottom-color: @active;
+}
+
+#workspaces button.urgent,
+#custom-notification.urgent {
+    color: @error;
+    border-bottom-color: @error;
+}
+
+#battery.warning,
+#memory.warning,
+#cpu.warning,
+#temperature.warning {
+    color: @warning;
+}
+
+#battery.critical,
+#memory.critical,
+#cpu.critical,
+#temperature.critical {
+    color: @error;
+}
+
+#network,
+#pulseaudio,
+#wireplumber,
+#bluetooth,
+#custom-update,
+#custom-power {
+    color: @foreground;
+}
+
+#clock {
+    color: @active;
+}
 
 /*  ______   __       ______                                        */
 /* /_____/\ /_/\     /_____/\                                       */
