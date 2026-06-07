@@ -1,0 +1,200 @@
+#    ▄▄▄▄▀ ▄  █ ▄███▄       ███   █    ██   ▄█▄    █  █▀ 
+# ▀▀▀ █   █   █ █▀   ▀      █  █  █    █ █  █▀ ▀▄  █▄█   
+#     █   ██▀▀█ ██▄▄        █ ▀ ▄ █    █▄▄█ █   ▀  █▀▄   
+#    █    █   █ █▄   ▄▀     █  ▄▀ ███▄ █  █ █▄  ▄▀ █  █  
+#   ▀        █  ▀███▀       ███       ▀   █ ▀███▀    █   
+#           ▀                            █          ▀    
+#                                       ▀                
+#     █ ▄▄   ▄  █ ██   █▄▄▄▄ ██   ████▄  ▄  █            
+#     █   █ █   █ █ █  █  ▄▀ █ █  █   █ █   █            
+#     █▀▀▀  ██▀▀█ █▄▄█ █▀▀▌  █▄▄█ █   █ ██▀▀█            
+#     █     █   █ █  █ █  █  █  █ ▀████ █   █            
+#      █       █     █   █      █          █             
+#       ▀     ▀     █   ▀      █          ▀              
+#                  ▀          ▀                          
+
+# Omarchy shell visual tokens for The Black Pharaoh.
+
+[bar]
+background       = "#232227"
+background-alpha = 0.92
+text             = "#d8c8a9"
+active           = "#b17f6d"
+scale-with-font  = true
+size-horizontal  = 26
+size-vertical    = 28
+
+[hyprland]
+active-border            = "#d2bd7d"
+active-border-foreground = "#f0dfbd"
+
+[controls]
+normal-color        = "#d8c8a9"
+normal-fill-alpha   = 0.035
+normal-border       = "#736a60"
+normal-border-width = 1
+normal-border-alpha = 0.34
+
+hover-cursor-color        = "#f0dfbd"
+hover-cursor-fill-alpha   = 0.07
+hover-cursor-border       = "#6296a0"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.42
+
+focus-color        = "#f0dfbd"
+focus-fill-alpha   = 0.09
+focus-border       = "#d2bd7d"
+focus-border-width = 1
+focus-border-alpha = 0.72
+
+selected-color        = "#f0dfbd"
+selected-fill-alpha   = 0.12
+selected-border       = "#6296a0"
+selected-border-width = 1
+selected-border-alpha = 0.68
+
+pressed-color        = "#fff3d1"
+pressed-fill-alpha   = 0.18
+selection-color      = "#6296a0"
+selection-fill-alpha = 0.28
+
+[spacing]
+scale = 0.96
+scale-with-font = true
+control-gap = 7
+control-padding-x = 10
+control-padding-y = 5
+input-padding-y = 6
+control-height = 28
+popup-row-height = 28
+row-gap = 7
+row-padding-x = 12
+label-gap = 4
+panel-gap = 13
+panel-padding = 17
+popup-padding = 13
+dropdown-width = 238
+searchable-dropdown-width = 258
+number-field-width = 116
+searchable-popup-min-height = 218
+
+[font]
+base-size = 12
+caption = 10
+body-small = 11
+body = 12
+subtitle = 13
+title = 14
+heading = 16
+display = 23
+display-large = 27
+icon-small = 11
+icon = 14
+icon-large = 18
+
+[popups]
+background       = "#18171b"
+background-alpha = 0.95
+text             = "#d8c8a9"
+border           = "#736a60"
+border-alpha     = 0.58
+border-width     = 1
+
+[tooltip]
+background       = "#18171b"
+background-alpha = 0.97
+text             = "#d8c8a9"
+border           = "#736a60"
+border-alpha     = 0.50
+
+[notifications]
+background       = "#18171b"
+background-alpha = 0.96
+text             = "#d8c8a9"
+border           = "#d2bd7d"
+border-alpha     = 0.74
+border-width     = 1
+countdown        = "#6296a0"
+
+[launcher]
+background                = "#18171b"
+background-alpha          = 0.95
+text                      = "#8f9696"
+border                    = "#736a60"
+border-alpha              = 0.54
+border-width              = 1
+scrim                     = "#0d0c10"
+scrim-alpha               = 0.50
+selected-background       = "#6296a0"
+selected-background-alpha = 0.11
+selected-text             = "#d8c8a9"
+selected-border           = "#d2bd7d"
+selected-border-alpha     = 0.76
+selected-border-width     = 0
+selected-border-width-left = 3
+
+[menu]
+background                = "#18171b"
+background-alpha          = 0.95
+text                      = "#8f9696"
+border                    = "#736a60"
+border-alpha              = 0.54
+border-width              = 1
+scrim                     = "#0d0c10"
+scrim-alpha               = 0.50
+selected-background       = "#6296a0"
+selected-background-alpha = 0.11
+selected-text             = "#d8c8a9"
+selected-border           = "#d2bd7d"
+selected-border-alpha     = 0.76
+selected-border-width     = 0
+selected-border-width-left = 3
+
+[polkit]
+background       = "#18171b"
+background-alpha = 0.97
+text             = "#d8c8a9"
+text-error       = "#c7927a"
+border           = "#d2bd7d"
+border-error     = "#b17f6d"
+border-alpha     = 0.88
+scrim            = "#0d0c10"
+scrim-alpha      = 0.60
+accent           = "#6296a0"
+
+[lock]
+background       = "#18171b"
+background-alpha = 0.82
+text             = "#d8c8a9"
+placeholder      = "#968975"
+text-error       = "#c7927a"
+border           = "#736a60"
+border-active    = "#d2bd7d"
+border-error     = "#b17f6d"
+border-alpha     = 0.90
+selection        = "#6296a0"
+selection-alpha  = 0.42
+
+[image-picker]
+scrim                   = "#0d0c10"
+scrim-alpha             = 0.58
+text                    = "#f0dfbd"
+selected-border         = "#d2bd7d"
+selected-border-alpha   = 1.0
+unselected-border       = "#736a60"
+unselected-border-alpha = 0.34
+
+#  ______   __       ______                                       
+# /_____/\ /_/\     /_____/\                                      
+# \:::_ \ \\:\ \    \:::_ \ \                                     
+#  \:\ \ \ \\:\ \    \:\ \ \ \                                    
+#   \:\ \ \ \\:\ \____\:\ \ \ \                                   
+#    \:\_\ \ \\:\/___/\\:\/.:| |                                  
+#  ___\_____\/_\_____\/ \____/_/  ______    _______   ______      
+# /________/\/_____/\ /_______/\ /_____/\ /_______/\ /_____/\     
+# \__.::.__\/\:::_ \ \\::: _  \ \\:::_ \ \\::: _  \ \\:::_ \ \    
+#   /_\::\ \  \:\ \ \ \\::(_)  \/_\:\ \ \ \\::(_)  \/_\:\ \ \ \   
+#   \:.\::\ \  \:\ \ \ \\::  _  \ \\:\ \ \ \\::  _  \ \\:\ \ \ \  
+#    \: \  \ \  \:\_\ \ \\::(_)  \ \\:\_\ \ \\::(_)  \ \\:\_\ \ \ 
+#     \_____\/   \_____\/ \_______\/ \_____\/ \_______\/ \_____\/ 
+#                                                                 
