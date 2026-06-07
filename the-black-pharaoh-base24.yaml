@@ -1,0 +1,37 @@
+system: "base24"
+name: "The Black Pharaoh"
+slug: "the-black-pharaoh"
+author: "OldJobobo (github.com/OldJobobo)"
+variant: "dark"
+
+palette:
+  # --- black pharaoh / occult archive ramp ---
+  base00: "#232227" # Crawling Void   - default background
+  base01: "#2f2d31" # Sealed Stone    - lighter background
+  base02: "#454045" # Ashen Slab      - selection background
+  base03: "#736a60" # Tomb Soot       - comments / muted text
+
+  base04: "#8f9696" # Corpse Moon Ash - dark foreground
+  base05: "#d8c8a9" # Dead Parchment  - default foreground
+  base06: "#f0dfbd" # Moon-Bone       - light foreground
+  base07: "#fff3d1" # Lunar Vellum    - brightest foreground
+
+  # --- ritual astronomy accents ---
+  base08: "#b17f6d" # Dried Blood Copper - red / error
+  base09: "#c7927a" # Flayed Planet      - orange / warning
+  base0A: "#b4a36f" # Cursed Brass       - yellow
+  base0B: "#898b77" # Funeral Cloak      - green
+  base0C: "#6296a0" # Star Rot Cyan      - cyan
+  base0D: "#8f9696" # Corpse Moon Ash    - blue
+  base0E: "#a58a86" # Bruised Stone      - purple
+  base0F: "#736a60" # Tomb Soot          - brown / special
+
+  # --- base24 extension ---
+  base10: "#18171b" # Inner Void       - darker background
+  base11: "#0d0c10" # Black Altar      - darkest background
+  base12: "#c7927a" # Flayed Planet    - bright red
+  base13: "#d2bd7d" # Idol Gold        - bright orange / yellow
+  base14: "#9c9f87" # Pallid Shroud    - bright green
+  base15: "#7eb7c0" # Crawling Starfire - bright cyan
+  base16: "#adb5b4" # Ghoul Moonlight  - bright blue
+  base17: "#b79a95" # Pallid Flesh     - bright purple

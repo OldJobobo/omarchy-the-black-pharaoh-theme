@@ -1,52 +1,66 @@
 return {
     {
-        -- Aether is the Neovim colorscheme engine; keep these identifiers for hot reload.
         "bjarneo/aether.nvim",
-        branch = "v2",
+        branch = "v3",
         name = "aether",
         priority = 1000,
         opts = {
-            transparent = false,
             colors = {
-                -- Background colors
                 bg = "#232227",
-                bg_dark = "#232227",
-                bg_highlight = "#4d4741",
+                dark_bg = "#18171b",
+                darker_bg = "#0d0c10",
+                lighter_bg = "#2f2d31",
 
-                -- Foreground colors
-                -- fg: Object properties, builtin types, builtin variables, member access, default text
                 fg = "#d8c8a9",
-                -- fg_dark: Inactive elements, statusline, secondary text
-                fg_dark = "#d8c8a9",
-                -- comment: Line highlight, gutter elements, disabled states
-                comment = "#4d4741",
+                dark_fg = "#8f9696",
+                light_fg = "#f0dfbd",
+                bright_fg = "#fff3d1",
+                muted = "#736a60",
 
-                -- Accent colors
-                -- red: Errors, diagnostics, tags, deletions, breakpoints
                 red = "#b17f6d",
-                -- orange: Constants, numbers, current line number, git modifications
-                orange = "#c7927a",
-                -- yellow: Types, classes, constructors, warnings, numbers, booleans
                 yellow = "#b4a36f",
-                -- green: Comments, strings, success states, git additions
+                orange = "#c7927a",
                 green = "#898b77",
-                -- cyan: Parameters, regex, preprocessor, hints, properties
                 cyan = "#6296a0",
-                -- blue: Functions, keywords, directories, links, info diagnostics
                 blue = "#8f9696",
-                -- purple: Storage keywords, special keywords, identifiers, namespaces
-                purple = "#a58a86",
-                -- magenta: Function declarations, exception handling, tags
-                magenta = "#b79a95",
-            },
-        },
-        config = function(_, opts)
-            require("aether").setup(opts)
-            vim.cmd.colorscheme("aether")
+                magenta = "#a58a86",
+                brown = "#736a60",
 
-            -- Enable hot reload
-            require("aether.hotreload").setup()
-        end,
+                bright_red = "#c7927a",
+                bright_yellow = "#d2bd7d",
+                bright_green = "#9c9f87",
+                bright_cyan = "#7eb7c0",
+                bright_blue = "#adb5b4",
+                bright_magenta = "#b79a95",
+
+                accent = "#6296a0",
+                cursor = "#f0dfbd",
+                foreground = "#d8c8a9",
+                background = "#232227",
+                selection = "#454045",
+                selection_foreground = "#232227",
+                selection_background = "#6296a0",
+            },
+            on_highlights = function(hl, c)
+                -- Keep broad Treesitter/LSP fallback groups out of Aether's generic purple lane.
+                hl.Constant = { fg = c.orange }
+                hl.Keyword = { fg = c.yellow, bold = true }
+                hl.Conditional = { fg = c.yellow }
+                hl.Repeat = { fg = c.yellow }
+                hl.Define = { fg = c.cyan }
+
+                hl["@constant"] = "Constant"
+                hl["@keyword"] = { fg = c.yellow }
+                hl["@keyword.conditional"] = "Conditional"
+                hl["@keyword.coroutine"] = "@keyword"
+                hl["@keyword.repeat"] = "Repeat"
+                hl["@keyword.return"] = "@keyword"
+                hl["@keyword.storage"] = "StorageClass"
+                hl["@keyword.type"] = { fg = c.yellow }
+                hl["@type.qualifier"] = "@keyword"
+                hl["@lsp.type.keyword"] = "@keyword"
+            end,
+        },
     },
     {
         "LazyVim/LazyVim",
