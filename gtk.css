@@ -20,7 +20,7 @@
 
 /* Dynamic color palette from The Black Pharaoh */
 @define-color background #232227;
-@define-color foreground #d8c8a9;
+@define-color foreground #b7a98d;
 
 @define-color black #232227;
 @define-color red #b17f6d;
@@ -29,7 +29,7 @@
 @define-color blue #8f9696;
 @define-color magenta #a58a86;
 @define-color cyan #6296a0;
-@define-color white #d8c8a9;
+@define-color white #b7a98d;
 @define-color bright_black #736a60;
 @define-color bright_red #c7927a;
 @define-color bright_green #9c9f87;
@@ -37,7 +37,7 @@
 @define-color bright_blue #adb5b4;
 @define-color bright_magenta #b79a95;
 @define-color bright_cyan #7eb7c0;
-@define-color bright_white #f0dfbd;
+@define-color bright_white #c9b99b;
 
 /* Adwaita Color Overrides */
 @define-color accent_bg_color @cyan;

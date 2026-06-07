@@ -1,14 +1,14 @@
 # Design Direction
 
-The Black Pharaoh should feel like a functional desktop recovered from an occult astronomical archive: dark, quiet, ancient, and geometric, with every surface restrained enough for daily use. Its strongest identity is ritual geometry over deep shadow: black fields, worn parchment, lunar discs, thin lines, muted metal, cloak fabric, and small celestial sparks.
+The Black Pharaoh should feel like a functional low-contrast desktop recovered from an occult astronomical archive: dark, quiet, ancient, and geometric, with every surface restrained enough for daily use. Its strongest identity is ritual geometry over deep shadow: black fields, worn parchment, lunar discs, thin lines, muted metal, cloak fabric, and small celestial sparks.
 
 This is not a shock-horror theme, a fantasy theme, a cyberpunk theme, or an Egyptian novelty theme. The Egyptian, cosmic, and horror references should stay implied through atmosphere, material, and proportion. The desktop should feel deliberate and usable first, mysterious second.
 
 ## North Star
 
-Build contrast through material and hierarchy, not saturation.
+Build low contrast through material and hierarchy, not saturation or washed-out illegibility.
 
-The system should use a narrow range of dark surfaces, parchment text, and sparse accent color. Bright color appears only where the interface needs state, focus, direction, or motion. Most of the theme should feel still.
+The system should use a narrow range of dark surfaces, softened parchment text, and sparse accent color. Low contrast here means gentle value steps that remain readable, not dim text that requires effort. Bright color appears only where the interface needs state, focus, direction, or motion. Most of the theme should feel still.
 
 The right mood is: quiet archive, black stone, moonlit parchment, measured astronomy, ritual tools, and old dust.
 
@@ -56,8 +56,9 @@ Core roles:
 
 - `#232227` is the absolute ground: blackened plum charcoal.
 - `#736a60` is the raised soot surface: bg2, inactive panels, muted rules, dim UI text, and bright black.
-- `#d8c8a9` is the working foreground: aged parchment.
-- `#f0dfbd` is moonlight: cursor, peak highlight, and rare luminous emphasis.
+- `#b7a98d` is the working foreground: aged parchment.
+- `#c9b99b` is moonlight: cursor, active text, light foreground, and controlled emphasis.
+- `#d9c9aa` is lunar vellum: the brightest foreground and rare peak highlight.
 - `#6296a0` is the primary accent: selection, focus, links, and precise cyan star light.
 - `#d2bd7d` is structural emphasis: active borders, progress, warning, lunar gold.
 - `#b17f6d` and `#c7927a` are copper states: error, deletion, alert, heat.
@@ -74,8 +75,9 @@ Do not use `color8` as body foreground. In this theme it is a visible soot/dust 
 | --- | --- | --- | --- | --- |
 | `#232227` | Crawling Void | `background`, `color0` | blackened plum void, the space behind the mask | Primary ground, terminal background, app background, selection foreground |
 | `#736a60` | Tomb Soot | `active_tab_background`, `color8` | raised soot, old stone, dust from a sealed chamber | Secondary surfaces, inactive panels, dividers, dim structure, bright black |
-| `#d8c8a9` | Dead Parchment | `foreground`, `color7` | brittle occult pages, bone-warm manuscript light | Main readable text, primary foreground, normal white |
-| `#f0dfbd` | Moon-Bone | `cursor`, `color15` | bleached lunar bone, a pale disc over the altar | Cursor, peak highlight, bright white, rare luminous emphasis |
+| `#b7a98d` | Dead Parchment | `foreground`, `color7` | brittle occult pages, bone-warm manuscript light | Main readable text, primary foreground, normal white |
+| `#c9b99b` | Moon-Bone | `light_foreground`, `cursor`, `color15` | bleached lunar bone, a pale disc over the altar | Cursor, active text, bright white, controlled emphasis |
+| `#d9c9aa` | Lunar Vellum | `bright_foreground` | clean moonlit parchment, the brightest vellum edge | Rare peak highlight, selected foreground, brightest readable UI text |
 | `#6296a0` | Star Rot Cyan | `accent`, `selection_background`, `color6` | cold stellar decay, oxidized light leaking through geometry | Focus, selection, links, info, precise active marks |
 | `#7eb7c0` | Crawling Starfire | `color14` | sharper cyan star-spark, a hostile celestial glint | Bright cyan, high-visibility info accents, sparse highlights |
 | `#d2bd7d` | Idol Gold | `active_border_color`, `color11` | tarnished idol rim, moonlit ritual metal | Active border, progress, warning, structural emphasis |
@@ -94,15 +96,19 @@ The palette should read as a cursed material set, not a rainbow. In-world names 
 
 ## Contrast Rules
 
-The theme should stay practical for daily work:
+This is a low-contrast readable theme. It should feel softened, dusty, and calm, but never faded enough to make normal work harder.
 
-- terminal foreground and ANSI colors should remain readable on `#232227`
-- selections should be visible without flooding the interface
-- active/focused states should be easy to find in peripheral vision
-- low-priority text can recede, but it should not disappear
-- bg2 surfaces should separate by value, not by bright color
+- Main foreground should sit around `6:1` to `7:1` against `#232227`. Current `#b7a98d` is about `6.8:1`, which is the intended body-text lane.
+- Light foreground, cursor, and active text should sit around `8:1`. Current `#c9b99b` is about `8.2:1`.
+- Brightest text should stay rare and below the hard white-on-black feeling. Current `#d9c9aa` is about `9.7:1` and should not become the default body foreground.
+- Secondary readable text can sit near `5:1` when it has enough size, spacing, or context. Current `#8f9696` is a good cool-neutral lane for navigation and structure.
+- Muted and inactive text can sit near `3:1`, but only for low-priority labels, metadata, disabled states, rules, and terminal bright-black output. Current `#736a60` should not carry long-form content.
+- Avoid `12:1` or higher white-on-black moments unless an external app forces them. That level of contrast breaks the theme's soft archival atmosphere.
+- Selections should be visible by material shift and accent role, not by bright flood fills.
+- Active/focused states should be easy to find in peripheral vision through cyan, gold, border, or surface change.
+- bg2 surfaces should separate by value, alpha, and edge treatment before adding new hue.
 
-Color should not be raised just because it looks pretty in isolation. If a value no longer feels like dust, parchment, moonlight, metal, cloak, or old pigment, it probably does not belong.
+If readability feels weak, fix role assignment first: move important text from muted soot to parchment, move active text to moonlight, or improve the surrounding surface. Do not raise the whole palette just because one surface feels dim. If a value no longer feels like dust, parchment, moonlight, metal, cloak, or old pigment, it probably does not belong.
 
 ## Interface Treatment
 
@@ -180,7 +186,7 @@ Good future improvements:
 - add any missing terminal/app theme files only when they can follow the same palette system
 - keep wallpaper additions limited and coherent
 - refine editor syntax groups for better hierarchy without adding new hue families
-- check contrast whenever changing ANSI colors or foreground roles
+- check low-contrast readability targets whenever changing ANSI colors or foreground roles
 - keep generated assets and README language aligned with the archive/astronomical concept
 
 Bad future improvements:

@@ -27,12 +27,12 @@
         "ghost_element.active": "#6296a026",
         "ghost_element.selected": "#454045",
         "ghost_element.disabled": "#18171b",
-        "text": "#d8c8a9",
+        "text": "#b7a98d",
         "text.muted": "#968975",
         "text.placeholder": "#736a60",
         "text.disabled": "#736a60",
         "text.accent": "#6296a0",
-        "icon": "#d8c8a9",
+        "icon": "#b7a98d",
         "icon.muted": "#968975",
         "icon.disabled": "#736a60",
         "icon.placeholder": "#736a60",
@@ -53,14 +53,14 @@
         "scrollbar.thumb.border": "#2322276f",
         "scrollbar.track.background": "#232227",
         "scrollbar.track.border": null,
-        "editor.foreground": "#d8c8a9",
+        "editor.foreground": "#b7a98d",
         "editor.background": "#232227",
         "editor.gutter.background": "#232227",
         "editor.subheader.background": "#232227",
         "editor.active_line.background": "#736a60",
         "editor.highlighted_line.background": null,
         "editor.line_number": "#736a60",
-        "editor.active_line_number": "#f0dfbd",
+        "editor.active_line_number": "#c9b99b",
         "editor.invisible": null,
         "editor.wrap_guide": "#736a60",
         "editor.active_wrap_guide": "#736a60",
@@ -91,8 +91,8 @@
         "terminal.ansi.cyan": "#6296a0",
         "terminal.ansi.bright_cyan": "#7eb7c0",
         "terminal.ansi.dim_cyan": null,
-        "terminal.ansi.white": "#d8c8a9",
-        "terminal.ansi.bright_white": "#f0dfbd",
+        "terminal.ansi.white": "#b7a98d",
+        "terminal.ansi.bright_white": "#c9b99b",
         "terminal.ansi.dim_white": null,
         "link_text.hover": "#6296a0",
         "conflict": "#d2bd7d",
@@ -110,7 +110,7 @@
         "hidden": "#736a60",
         "hidden.background": "#232227",
         "hidden.border": "#736a60",
-        "hint": "#d8c8a9",
+        "hint": "#b7a98d",
         "hint.background": "#232227",
         "hint.border": "#6296a0",
         "ignored": "#736a60",
@@ -139,7 +139,7 @@
         "warning.border": "#d2bd7d",
         "players": [
           {
-            "cursor": "#f0dfbd",
+            "cursor": "#c9b99b",
             "selection": "#6296a060",
             "background": null
           }
@@ -216,27 +216,27 @@
             "font_weight": null
           },
           "punctuation": {
-            "color": "#d8c8a9",
+            "color": "#b7a98d",
             "font_style": null,
             "font_weight": null
           },
           "punctuation.bracket": {
-            "color": "#d8c8a9",
+            "color": "#b7a98d",
             "font_style": null,
             "font_weight": null
           },
           "punctuation.delimiter": {
-            "color": "#d8c8a9",
+            "color": "#b7a98d",
             "font_style": null,
             "font_weight": null
           },
           "punctuation.list_marker": {
-            "color": "#d8c8a9",
+            "color": "#b7a98d",
             "font_style": null,
             "font_weight": null
           },
           "punctuation.special": {
-            "color": "#d8c8a9",
+            "color": "#b7a98d",
             "font_style": null,
             "font_weight": null
           },

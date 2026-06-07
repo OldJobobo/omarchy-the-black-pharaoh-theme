@@ -26,10 +26,10 @@ return {
                 darker_bg = "#0d0c10",
                 lighter_bg = "#2f2d31",
 
-                fg = "#d8c8a9",
+                fg = "#b7a98d",
                 dark_fg = "#8f9696",
-                light_fg = "#f0dfbd",
-                bright_fg = "#fff3d1",
+                light_fg = "#c9b99b",
+                bright_fg = "#d9c9aa",
                 muted = "#736a60",
 
                 red = "#b17f6d",
@@ -49,8 +49,8 @@ return {
                 bright_magenta = "#b79a95",
 
                 accent = "#6296a0",
-                cursor = "#f0dfbd",
-                foreground = "#d8c8a9",
+                cursor = "#c9b99b",
+                foreground = "#b7a98d",
                 background = "#232227",
                 selection = "#454045",
                 selection_foreground = "#232227",

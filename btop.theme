@@ -17,7 +17,7 @@
 theme[main_bg]=""
 
 # Main text color
-theme[main_fg]="#d8c8a9"
+theme[main_fg]="#b7a98d"
 
 # Title color for boxes
 theme[title]="#d2bd7d"
@@ -35,7 +35,7 @@ theme[selected_fg]="#232227"
 theme[inactive_fg]="#968975"
 
 # Color of text appearing on top of graphs
-theme[graph_text]="#f0dfbd"
+theme[graph_text]="#c9b99b"
 
 # Background color of the percentage meters
 theme[meter_bg]="#736a60"
@@ -73,7 +73,7 @@ theme[cached_end]="#d2bd7d"
 # Mem/Disk available meter
 theme[available_start]="#6296a0"
 theme[available_mid]="#898b77"
-theme[available_end]="#d8c8a9"
+theme[available_end]="#b7a98d"
 
 # Mem/Disk used meter
 theme[used_start]="#898b77"
@@ -103,7 +103,7 @@ theme[gradient_color_3]="#898b77"
 theme[gradient_color_4]="#6296a0"
 theme[gradient_color_5]="#d2bd7d"
 theme[gradient_color_6]="#c7927a"
-theme[gradient_color_7]="#f0dfbd"
+theme[gradient_color_7]="#c9b99b"
 
 #  ______   __       ______                                       
 # /_____/\ /_/\     /_____/\                                      

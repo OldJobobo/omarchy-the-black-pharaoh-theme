@@ -20,7 +20,7 @@ local activeBorderColor = "rgb(d2bd7d)"
 local inactiveBorderColor = "rgba(736a60aa)"
 local groupBarActive = "rgba(232227e6)"
 local groupBarInactive = "rgba(736a60b8)"
-local textColor = "rgb(d8c8a9)"
+local textColor = "rgb(b7a98d)"
 local inactiveTextColor = "rgba(968975cc)"
 
 hl.config({

@@ -27,9 +27,9 @@ palette:
   base03: "#736a60" # Tomb Soot       - comments / muted text
 
   base04: "#8f9696" # Corpse Moon Ash - dark foreground
-  base05: "#d8c8a9" # Dead Parchment  - default foreground
-  base06: "#f0dfbd" # Moon-Bone       - light foreground
-  base07: "#fff3d1" # Lunar Vellum    - brightest foreground
+  base05: "#b7a98d" # Dead Parchment  - default foreground
+  base06: "#c9b99b" # Moon-Bone       - light foreground
+  base07: "#d9c9aa" # Lunar Vellum    - brightest foreground
 
   # --- ritual astronomy accents ---
   base08: "#b17f6d" # Dried Blood Copper - red / error

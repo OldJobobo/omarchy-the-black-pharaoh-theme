@@ -14,33 +14,138 @@
 /*                  ▀          ▀                           */
 
 /**
-* @name base16 Discord
-* @author @bypass_
-* @version 0.1.0
-* @description Built using The Black Pharaoh and Pywal
-* @source https://github.com/imbypass/base16-Discord
+* @name The Black Pharaoh Midnight
+* @author OldJobobo, refact0r
+* @version 1.0.0
+* @description Midnight customized for The Black Pharaoh.
+* @source https://github.com/refact0r/midnight-discord
 **/
 
-/* import the parent */
-@import url('https://imbypass.github.io/base16-discord/omarchy-discord.theme.css');
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+
+body {
+    --font: '';
+    --code-font: '';
+
+    --gap: 12px;
+    --divider-thickness: 2px;
+    --border-thickness: 1px;
+    --roundness-xl: 0px;
+    --roundness-l: 0px;
+    --roundness-m: 0px;
+    --roundness-s: 0px;
+    --roundness-xs: 0px;
+    --roundness-xxs: 0px;
+
+    --animations: on;
+    --list-item-transition: 0.2s ease;
+    --dms-icon-svg-transition: 0.4s ease;
+    --border-hover-transition: 0.2s ease;
+
+    --top-bar-height: var(--gap);
+    --top-bar-button-position: titlebar;
+    --top-bar-title-position: off;
+    --subtle-top-bar-title: on;
+    --custom-window-controls: on;
+    --window-control-size: 14px;
+
+    --custom-dms-icon: custom;
+    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg');
+    --dms-icon-svg-size: 90%;
+    --custom-dms-background: off;
+
+    --background-image: off;
+    --transparency-tweaks: off;
+    --remove-bg-layer: off;
+    --panel-blur: off;
+    --blur-amount: 12px;
+    --bg-floating: var(--bg-3);
+
+    --custom-chatbar: off;
+    --chatbar-height: 47px;
+    --small-user-panel: on;
+}
 
 :root {
-    --color00: #232227;
-    --color01: #b17f6d;
-    --color02: #898b77;
-    --color03: #b4a36f;
-    --color04: #8f9696;
-    --color05: #a58a86;
-    --color06: #6296a0;
-    --color07: #d8c8a9;
-    --color08: #736a60;
-    --color09: #c7927a;
-    --color10: #9c9f87;
-    --color11: #d2bd7d;
-    --color12: #adb5b4;
-    --color13: #b79a95;
-    --color14: #7eb7c0;
-    --color15: #f0dfbd;
+    --colors: on;
+    --radius-xs: 0px;
+    --radius-sm: 0px;
+    --radius-md: 0px;
+    --radius-lg: 0px;
+    --radius-xl: 0px;
+    --radius-xxl: 0px;
+    --button-radius: 0px;
+    --input-radius: 0px;
+
+    --text-0: #0d0c10;
+    --text-1: #d9c9aa;
+    --text-2: #c9b99b;
+    --text-3: #b7a98d;
+    --text-4: #8f9696;
+    --text-5: #736a60;
+
+    --bg-1: #454045;
+    --bg-2: #2f2d31;
+    --bg-3: #18171b;
+    --bg-4: #0d0c10;
+
+    --hover: color-mix(in hsl, #454045, transparent 46%);
+    --active: color-mix(in hsl, #6296a0, transparent 74%);
+    --active-2: color-mix(in hsl, #d2bd7d, transparent 70%);
+    --message-hover: color-mix(in hsl, #454045, transparent 62%);
+
+    --accent-1: #adb5b4;
+    --accent-2: #6296a0;
+    --accent-3: #7eb7c0;
+    --accent-4: #7eb7c0;
+    --accent-5: #8f9696;
+    --accent-new: #d2bd7d;
+
+    --mention: linear-gradient(to right, color-mix(in hsl, #6296a0, transparent 82%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, #7eb7c0, transparent 84%) 40%, transparent);
+    --reply: linear-gradient(to right, color-mix(in hsl, #8f9696, transparent 84%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, #adb5b4, transparent 86%) 40%, transparent);
+
+    --online: #898b77;
+    --dnd: #b17f6d;
+    --idle: #d2bd7d;
+    --streaming: #a58a86;
+    --offline: #736a60;
+
+    --border-light: color-mix(in hsl, #736a60, transparent 66%);
+    --border: color-mix(in hsl, #736a60, transparent 42%);
+    --border-hover: color-mix(in hsl, #d2bd7d, transparent 34%);
+    --button-border: color-mix(in hsl, #b7a98d, transparent 90%);
+
+    --red-1: #c7927a;
+    --red-2: #b17f6d;
+    --red-3: #c7927a;
+    --red-4: #736a60;
+    --red-5: #232227;
+
+    --green-1: #9c9f87;
+    --green-2: #898b77;
+    --green-3: #9c9f87;
+    --green-4: #736a60;
+    --green-5: #232227;
+
+    --blue-1: #adb5b4;
+    --blue-2: #7eb7c0;
+    --blue-3: #6296a0;
+    --blue-4: #8f9696;
+    --blue-5: #736a60;
+
+    --yellow-1: #d9c9aa;
+    --yellow-2: #c9b99b;
+    --yellow-3: #d2bd7d;
+    --yellow-4: #b4a36f;
+    --yellow-5: #736a60;
+
+    --purple-1: #b79a95;
+    --purple-2: #a58a86;
+    --purple-3: #b79a95;
+    --purple-4: #736a60;
+    --purple-5: #232227;
 }
 
 /*  ______   __       ______                                        */

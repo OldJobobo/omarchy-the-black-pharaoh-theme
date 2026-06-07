@@ -18,7 +18,7 @@
 [bar]
 background       = "#232227"
 background-alpha = 0.92
-text             = "#d8c8a9"
+text             = "#b7a98d"
 active           = "#d2bd7d"
 scale-with-font  = true
 size-horizontal  = 26
@@ -26,34 +26,34 @@ size-vertical    = 28
 
 [hyprland]
 active-border            = "#d2bd7d"
-active-border-foreground = "#f0dfbd"
+active-border-foreground = "#c9b99b"
 
 [controls]
-normal-color        = "#d8c8a9"
+normal-color        = "#b7a98d"
 normal-fill-alpha   = 0.035
 normal-border       = "#736a60"
 normal-border-width = 1
 normal-border-alpha = 0.34
 
-hover-cursor-color        = "#f0dfbd"
+hover-cursor-color        = "#c9b99b"
 hover-cursor-fill-alpha   = 0.07
 hover-cursor-border       = "#6296a0"
 hover-cursor-border-width = 1
 hover-cursor-border-alpha = 0.42
 
-focus-color        = "#f0dfbd"
+focus-color        = "#c9b99b"
 focus-fill-alpha   = 0.09
 focus-border       = "#d2bd7d"
 focus-border-width = 1
 focus-border-alpha = 0.72
 
-selected-color        = "#f0dfbd"
+selected-color        = "#c9b99b"
 selected-fill-alpha   = 0.12
 selected-border       = "#6296a0"
 selected-border-width = 1
 selected-border-alpha = 0.68
 
-pressed-color        = "#fff3d1"
+pressed-color        = "#d9c9aa"
 pressed-fill-alpha   = 0.18
 selection-color      = "#6296a0"
 selection-fill-alpha = 0.28
@@ -95,7 +95,7 @@ icon-large = 18
 [popups]
 background       = "#18171b"
 background-alpha = 0.95
-text             = "#d8c8a9"
+text             = "#b7a98d"
 border           = "#736a60"
 border-alpha     = 0.58
 border-width     = 1
@@ -103,14 +103,14 @@ border-width     = 1
 [tooltip]
 background       = "#18171b"
 background-alpha = 0.97
-text             = "#d8c8a9"
+text             = "#b7a98d"
 border           = "#736a60"
 border-alpha     = 0.50
 
 [notifications]
 background       = "#18171b"
 background-alpha = 0.96
-text             = "#d8c8a9"
+text             = "#b7a98d"
 border           = "#d2bd7d"
 border-alpha     = 0.74
 border-width     = 1
@@ -127,7 +127,7 @@ scrim                     = "#0d0c10"
 scrim-alpha               = 0.50
 selected-background       = "#6296a0"
 selected-background-alpha = 0.11
-selected-text             = "#d8c8a9"
+selected-text             = "#b7a98d"
 selected-border           = "#d2bd7d"
 selected-border-alpha     = 0.76
 selected-border-width     = 0
@@ -144,7 +144,7 @@ scrim                     = "#0d0c10"
 scrim-alpha               = 0.50
 selected-background       = "#6296a0"
 selected-background-alpha = 0.11
-selected-text             = "#d8c8a9"
+selected-text             = "#b7a98d"
 selected-border           = "#d2bd7d"
 selected-border-alpha     = 0.76
 selected-border-width     = 0
@@ -153,7 +153,7 @@ selected-border-width-left = 3
 [polkit]
 background       = "#18171b"
 background-alpha = 0.97
-text             = "#d8c8a9"
+text             = "#b7a98d"
 text-error       = "#c7927a"
 border           = "#d2bd7d"
 border-error     = "#b17f6d"
@@ -165,7 +165,7 @@ accent           = "#6296a0"
 [lock]
 background       = "#18171b"
 background-alpha = 0.82
-text             = "#d8c8a9"
+text             = "#b7a98d"
 placeholder      = "#968975"
 text-error       = "#c7927a"
 border           = "#736a60"
@@ -178,7 +178,7 @@ selection-alpha  = 0.42
 [image-picker]
 scrim                   = "#0d0c10"
 scrim-alpha             = 0.58
-text                    = "#f0dfbd"
+text                    = "#c9b99b"
 selected-border         = "#d2bd7d"
 selected-border-alpha   = 1.0
 unselected-border       = "#736a60"

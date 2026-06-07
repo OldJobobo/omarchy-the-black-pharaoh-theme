@@ -15,9 +15,9 @@
 
 name: The Black Pharaoh
 accent: "#6296a0"
-cursor: "#f0dfbd"
+cursor: "#c9b99b"
 background: "#232227"
-foreground: "#d8c8a9"
+foreground: "#b7a98d"
 details: darker
 
 terminal_colors:
@@ -29,7 +29,7 @@ terminal_colors:
     blue:    "#8f9696"
     magenta: "#a58a86"
     cyan:    "#6296a0"
-    white:   "#d8c8a9"
+    white:   "#b7a98d"
   bright:
     black:   "#736a60"
     red:     "#c7927a"
@@ -38,7 +38,7 @@ terminal_colors:
     blue:    "#adb5b4"
     magenta: "#b79a95"
     cyan:    "#7eb7c0"
-    white:   "#f0dfbd"
+    white:   "#c9b99b"
 
 #  ______   __       ______                                       
 # /_____/\ /_/\     /_____/\                                      

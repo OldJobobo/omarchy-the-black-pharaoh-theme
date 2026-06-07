@@ -13,8 +13,8 @@
 /*       ▀     ▀     █   ▀      █          ▀               */
 /*                  ▀          ▀                           */
 
-@define-color selected-text #d8c8a9;
-@define-color text #d8c8a9;
+@define-color selected-text #b7a98d;
+@define-color text #b7a98d;
 @define-color base #232227;
 @define-color border #736a60;
 @define-color frame #d2bd7d;
@@ -27,7 +27,7 @@
 @define-color warning #d2bd7d;
 @define-color error #b17f6d;
 @define-color success #898b77;
-@define-color foreground #d8c8a9;
+@define-color foreground #b7a98d;
 @define-color background #232227;
 
 window,
