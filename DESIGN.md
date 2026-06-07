@@ -55,7 +55,7 @@ UI geometry should feel etched or plotted, not ornamental. Borders should read l
 Core roles:
 
 - `#232227` is the absolute ground: blackened plum charcoal.
-- `#4d4741` is the raised dark surface: bg2, inactive panels, muted rules, and bright black.
+- `#736a60` is the raised soot surface: bg2, inactive panels, muted rules, dim UI text, and bright black.
 - `#d8c8a9` is the working foreground: aged parchment.
 - `#f0dfbd` is moonlight: cursor, peak highlight, and rare luminous emphasis.
 - `#6296a0` is the primary accent: selection, focus, links, and precise cyan star light.
@@ -66,14 +66,14 @@ Core roles:
 - `#a58a86` and `#b79a95` are dusty mauve: secondary syntax, special states, low-drama contrast.
 - `#968975` is an auxiliary dust/taupe value for places that need a middle material tone outside ANSI.
 
-Do not turn `color8` into a readable foreground. In this theme it is intentionally a second background layer. If text needs to be dim, use a lighter muted tone or alpha-treated foreground rather than relying on `color8` as body text.
+Do not use `color8` as body foreground. In this theme it is a visible soot/dust layer for dim structure, inactive text, rules, and terminal bright-black output. If text needs to remain comfortably readable for long passages, use parchment, auxiliary dust, or alpha-treated foreground instead.
 
 ### Palette Table
 
 | Hex | Theme name | Role | In-world reference | Use |
 | --- | --- | --- | --- | --- |
 | `#232227` | Crawling Void | `background`, `color0` | blackened plum void, the space behind the mask | Primary ground, terminal background, app background, selection foreground |
-| `#4d4741` | Tomb Soot | `active_tab_background`, `color8` | raised soot, old stone, dust from a sealed chamber | Secondary surfaces, inactive panels, dividers, disabled structure, bright black |
+| `#736a60` | Tomb Soot | `active_tab_background`, `color8` | raised soot, old stone, dust from a sealed chamber | Secondary surfaces, inactive panels, dividers, dim structure, bright black |
 | `#d8c8a9` | Dead Parchment | `foreground`, `color7` | brittle occult pages, bone-warm manuscript light | Main readable text, primary foreground, normal white |
 | `#f0dfbd` | Moon-Bone | `cursor`, `color15` | bleached lunar bone, a pale disc over the altar | Cursor, peak highlight, bright white, rare luminous emphasis |
 | `#6296a0` | Star Rot Cyan | `accent`, `selection_background`, `color6` | cold stellar decay, oxidized light leaking through geometry | Focus, selection, links, info, precise active marks |
