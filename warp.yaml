@@ -1,0 +1,26 @@
+name: The Black Pharaoh
+accent: "#6296a0"
+cursor: "#f0dfbd"
+background: "#232227"
+foreground: "#d8c8a9"
+details: darker
+
+terminal_colors:
+  normal:
+    black:   "#232227"
+    red:     "#b17f6d"
+    green:   "#898b77"
+    yellow:  "#b4a36f"
+    blue:    "#8f9696"
+    magenta: "#a58a86"
+    cyan:    "#6296a0"
+    white:   "#d8c8a9"
+  bright:
+    black:   "#4d4741"
+    red:     "#c7927a"
+    green:   "#9c9f87"
+    yellow:  "#d2bd7d"
+    blue:    "#adb5b4"
+    magenta: "#b79a95"
+    cyan:    "#7eb7c0"
+    white:   "#f0dfbd"
